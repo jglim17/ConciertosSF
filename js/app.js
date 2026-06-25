@@ -99,13 +99,25 @@ function obtenerFecha(dia) {
 
     switch (idioma) {
 
-        case "en":
+        case "eu":
             return `${textos.months.july} ${dia}`;
 
-        case "eu":
-            return `${dia} ${textos.months.july}`;
+        case "en":
+
+            let sufijo = "th";
+
+            if (dia % 10 === 1 && dia !== 11) sufijo = "st";
+            else if (dia % 10 === 2 && dia !== 12) sufijo = "nd";
+            else if (dia % 10 === 3 && dia !== 13) sufijo = "rd";
+
+            return `${textos.months.july} ${dia}${sufijo}`;
 
         case "fr":
+
+            if (dia == 1) {
+                return `1er ${textos.months.july}`;
+            }
+
             return `${dia} ${textos.months.july}`;
 
         default:
