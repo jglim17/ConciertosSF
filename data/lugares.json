@@ -13,10 +13,17 @@
     "fr": "Place du Château"
   },
 
-  "fueros": {
-    "es": "Plaza de los Fueros",
-    "eu": "Foruen Plaza",
-    "en": "Plaza de los Fueros",
-    "fr": "Place des Fueros"
-  }
+  "fueros-zona-joven": {
+  "es": "Plaza de los Fueros · Zona Joven",
+  "eu": "Foruen Plaza · Gazte Gunea",
+  "en": "Plaza de los Fueros · Youth Zone",
+  "fr": "Place des Fueros · Espace Jeunes"
+},
+
+"fueros-sound-fermin": {
+  "es": "Plaza de los Fueros · Sound Fermín",
+  "eu": "Foruen Plaza · Sound Fermín",
+  "en": "Plaza de los Fueros · Sound Fermín",
+  "fr": "Place des Fueros · Sound Fermín"
+}
 }
