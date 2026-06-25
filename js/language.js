@@ -1,13 +1,14 @@
-let idioma = localStorage.getItem("idioma") || "es";
-let textos = {};
+// Idioma actual
+window.idioma = localStorage.getItem("idioma") || "es";
+
+// Textos del idioma
+window.textos = {};
 
 // Carga el archivo JSON del idioma
 async function cargarIdioma() {
 
     const respuesta = await fetch(`lang/${idioma}.json`);
     textos = await respuesta.json();
-
-    console.log(textos);
 
     aplicarIdioma();
     actualizarSelectorIdiomas();
@@ -28,11 +29,25 @@ async function cambiarIdioma(nuevoIdioma) {
 
 }
 
+// Devuelve un texto del JSON usando una ruta.
+// Ejemplo: obtenerTexto("months.july")
+function obtenerTexto(ruta) {
+
+    return ruta.split(".").reduce((obj, clave) => obj?.[clave], textos);
+
+}
+
 // Aplica los textos al HTML
 function aplicarIdioma() {
 
     document.getElementById("app-title").textContent = textos.app.title;
-    document.getElementById("app-subtitle").textContent = textos.app.subtitle;
+
+    // Solo cambia el subtítulo si existe
+    const subtitulo = document.getElementById("app-subtitle");
+
+    if (subtitulo && textos.app.subtitle) {
+        subtitulo.textContent = textos.app.subtitle;
+    }
 
     document.getElementById("menu-today").innerHTML = "🏠 " + textos.menu.today;
     document.getElementById("menu-explore").innerHTML = "🔍 " + textos.menu.explore;
@@ -50,11 +65,7 @@ function actualizarSelectorIdiomas() {
 
         const enlace = document.getElementById("lang-" + codigo);
 
-        if (codigo === idioma) {
-            enlace.style.display = "none";
-        } else {
-            enlace.style.display = "inline";
-        }
+        enlace.style.display = (codigo === idioma) ? "none" : "inline";
 
     });
 
