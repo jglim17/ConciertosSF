@@ -1,15 +1,10 @@
+/* ===== Base ===== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f5f5f5;
     color: #222;
-}
-
-header {
-    background: #c8102e;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
 
 main {
@@ -18,12 +13,23 @@ main {
     padding: 20px;
 }
 
-#conciertos {
-    background: white;
-    border-radius: 10px;
+/* ===== Cabecera ===== */
+
+header {
+    background: #c8102e;
+    color: white;
+    text-align: center;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+#cuenta-atras {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== Menú ===== */
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -31,6 +37,7 @@ main {
     border-bottom: 2px solid #ddd;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .menu a {
@@ -52,25 +59,50 @@ main {
     border-bottom: 4px solid #c8102e;
 }
 
-#cuenta-atras {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-.concierto{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:12px;
-    margin-bottom:12px;
-    box-shadow:0 2px 4px rgba(0,0,0,.08);
+/* ===== Secciones ===== */
+
+section {
+    margin-bottom: 30px;
 }
 
-.concierto h3{
-    margin:0 0 6px 0;
-    color:#c8102e;
+h2 {
+    margin-bottom: 15px;
 }
 
-.concierto p{
-    margin:4px 0;
+/* ===== Tarjetas ===== */
+
+.concierto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+.concierto h3 {
+    margin: 0 0 8px 0;
+    color: #c8102e;
+}
+
+.concierto p {
+    margin: 4px 0;
+    color: #555;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 600px) {
+    header {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .menu a {
+        padding: 14px 6px;
+        font-size: 0.95rem;
+    }
 }
