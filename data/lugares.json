@@ -1,4 +1,3 @@
-
 {
   "herri": {
     "es": "Herri Sanferminak (Plaza de los Ajos o Plaza de la O)",
@@ -12,7 +11,8 @@
     "eu": "Gazteluko Plaza",
     "en": "Castle Square",
     "fr": "Place du Château"
-  }
+  },
+
   "fueros": {
     "es": "Plaza de los Fueros",
     "eu": "Foruen Plaza",
