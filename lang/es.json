@@ -1,1 +1,34 @@
-a
+{
+  "app": {
+    "title": "SFAlDía",
+    "subtitle": "San Fermín 2026"
+  },
+
+  "menu": {
+    "today": "Hoy",
+    "explore": "Explorar",
+    "favorites": "Mis Sanfermines"
+  },
+
+  "sections": {
+    "now": "Ahora mismo",
+    "events": "Eventos"
+  },
+
+  "filters": {
+    "all": "Todos",
+    "concerts": "Conciertos",
+    "giants": "Gigantes",
+    "fireworks": "Fuegos",
+    "others": "Otros"
+  },
+
+  "locations": {
+
+  },
+
+  "messages": {
+    "loading": "Cargando...",
+    "noEvents": "No hay eventos."
+  }
+}
