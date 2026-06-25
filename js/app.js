@@ -1,4 +1,5 @@
 let diaActual = 6;
+
 async function iniciarApp() {
 
     const proximos = document.getElementById("proximos");
@@ -8,6 +9,8 @@ async function iniciarApp() {
         await cargarIdioma();
 
         await cargarDatos();
+
+        diaActual = obtenerDiaInicial();
 
         pintarEventos();
 
@@ -30,6 +33,14 @@ function pintarEventos() {
 
     conciertos.forEach(concierto => {
 
+        // Solo mostrar hoy y mañana
+        if (
+            concierto.dia !== diaActual &&
+            concierto.dia !== diaActual + 1
+        ) {
+            return;
+        }
+
         if (!grupos[concierto.dia]) {
             grupos[concierto.dia] = [];
         }
@@ -42,14 +53,12 @@ function pintarEventos() {
         .sort((a, b) => a - b)
         .forEach(dia => {
 
-            console.log("ANTES", dia, grupos[dia].map(c => c.hora));
-
-            grupos[dia].sort((a, b) => convertirHora(a.hora) - convertirHora(b.hora));
-
-            console.log("DESPUÉS", dia, grupos[dia].map(c => c.hora));
+            grupos[dia].sort((a, b) =>
+                convertirHora(a.hora) - convertirHora(b.hora)
+            );
 
             const tituloDia = document.createElement("h2");
-            tituloDia.textContent = `📅 ${obtenerFecha(dia)}`;
+            tituloDia.textContent = `📅 ${obtenerFecha(Number(dia))}`;
             tituloDia.style.marginTop = "30px";
 
             proximos.appendChild(tituloDia);
@@ -73,11 +82,28 @@ function pintarEventos() {
 
 }
 
+function obtenerDiaInicial() {
+
+    const hoy = new Date();
+
+    // JavaScript: enero = 0 ... julio = 6
+    if (hoy.getMonth() !== 6) {
+        return 6;
+    }
+
+    const dia = hoy.getDate();
+
+    if (dia < 6) return 6;
+    if (dia > 14) return 14;
+
+    return dia;
+
+}
+
 function convertirHora(hora) {
 
     let [h, m] = hora.split(":").map(Number);
 
-    // Las horas de madrugada se consideran al final del día
     if (h < 6) {
         h += 24;
     }
@@ -115,13 +141,14 @@ function obtenerFecha(dia) {
 
         case "fr":
 
-            if (dia == 1) {
+            if (dia === 1) {
                 return `1er ${textos.months.july}`;
             }
 
             return `${dia} ${textos.months.july}`;
 
         default:
+
             return `${dia} de ${textos.months.july}`;
 
     }
