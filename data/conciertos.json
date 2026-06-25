@@ -710,5 +710,13 @@
     "titulo": "Patiwi",
     "lugar": "fueros-sound-fermin",
     "tipo": "concert"
+  },
+  {
+    "id": 90,
+    "dia": 6,
+    "hora": "12:00",
+    "titulo": "Chupinazo",
+    "lugar": "ayuntamiento",
+    "tipo": "chupinazo"
   }
 ]
