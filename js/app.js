@@ -10,6 +10,9 @@ async function cargarConciertos() {
 
         const conciertos = await respuesta.json();
 
+        console.log(conciertos[0]);
+        alert(JSON.stringify(conciertos[0]));
+
         proximos.innerHTML = "";
 
         // Agrupar por día
