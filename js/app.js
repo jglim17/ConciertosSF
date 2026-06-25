@@ -1,32 +1,26 @@
 async function cargarConciertos() {
+
     const proximos = document.getElementById("proximos");
 
     try {
-        const respuesta = await fetch("data/conciertos.json");
 
-        if (!respuesta.ok) {
-            throw new Error("No se pudo cargar conciertos.json");
-        }
-
-        const conciertos = await respuesta.json();
-
-        console.log(conciertos[0]);
-        alert(JSON.stringify(conciertos[0]));
+        // Cargar todos los datos
+        await cargarDatos();
 
         proximos.innerHTML = "";
 
-        // Agrupar por día
         const grupos = {};
 
         conciertos.forEach(concierto => {
+
             if (!grupos[concierto.dia]) {
                 grupos[concierto.dia] = [];
             }
 
             grupos[concierto.dia].push(concierto);
+
         });
 
-        // Mostrar cada día
         Object.keys(grupos)
             .sort((a, b) => a - b)
             .forEach(dia => {
@@ -55,15 +49,22 @@ async function cargarConciertos() {
             });
 
     } catch (error) {
+
         console.error(error);
         proximos.innerHTML = `<p>${error.message}</p>`;
+
     }
+
 }
 
-// De momento devuelve el identificador del lugar.
-// Más adelante leerá locations.json y mostrará el nombre traducido.
-function obtenerLugar(lugar) {
-    return lugar;
+function obtenerLugar(idLugar) {
+
+    if (!lugares[idLugar]) {
+        return idLugar;
+    }
+
+    return lugares[idLugar][idioma] || lugares[idLugar].es;
+
 }
 
 document.addEventListener("DOMContentLoaded", cargarConciertos);
