@@ -16,5 +16,4 @@ async function cargarConciertos() {
         `;
     });
 }
-
 document.addEventListener("DOMContentLoaded", cargarConciertos);
