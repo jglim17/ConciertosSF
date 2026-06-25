@@ -42,12 +42,6 @@ function aplicarIdioma() {
 
     document.getElementById("app-title").textContent = textos.app.title;
 
-    const subtitulo = document.getElementById("app-subtitle");
-
-    if (subtitulo && textos.app.subtitle) {
-        subtitulo.textContent = textos.app.subtitle;
-    }
-
     document.getElementById("menu-today").innerHTML = "🏠 " + textos.menu.today;
     document.getElementById("menu-explore").innerHTML = "🔍 " + textos.menu.explore;
     document.getElementById("menu-favorites").innerHTML = "⭐ " + textos.menu.favorites;
