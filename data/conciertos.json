@@ -1,69 +1,586 @@
 [
-  { "id": 1, "dia": 6, "hora": "14:00", "artista": "Txupinazoa: 9 Egun, 10 Urte, 11 Borroka!", "escenario": "Herri Sanferminak" },
-  { "id": 2, "dia": 6, "hora": "15:00", "artista": "Trikiteens", "escenario": "Herri Sanferminak" },
-  { "id": 3, "dia": 6, "hora": "18:00", "artista": "Ezpika", "escenario": "Herri Sanferminak" },
-  { "id": 4, "dia": 6, "hora": "20:00", "artista": "Los Benis", "escenario": "Herri Sanferminak" },
-  { "id": 5, "dia": 6, "hora": "22:00", "artista": "DJ Siwanaba", "escenario": "Herri Sanferminak" },
-  { "id": 6, "dia": 6, "hora": "00:00", "artista": "DJ Hiru Hirukiak", "escenario": "Herri Sanferminak" },
-
-  { "id": 7, "dia": 7, "hora": "12:30", "artista": "Kantuz Bermuta", "escenario": "Herri Sanferminak" },
-  { "id": 8, "dia": 7, "hora": "19:00", "artista": "Arrats Antitaurinoak: Iruña Antitaurina", "escenario": "Herri Sanferminak" },
-  { "id": 9, "dia": 7, "hora": "20:00", "artista": "Hilketa", "escenario": "Herri Sanferminak" },
-  { "id": 10, "dia": 7, "hora": "21:30", "artista": "Larrain Dantza", "escenario": "Herri Sanferminak" },
-  { "id": 11, "dia": 7, "hora": "21:45", "artista": "Bisaiak", "escenario": "Herri Sanferminak" },
-  { "id": 12, "dia": 7, "hora": "23:00", "artista": "Mutiko", "escenario": "Herri Sanferminak" },
-  { "id": 13, "dia": 7, "hora": "00:30", "artista": "DJ Ratxetas", "escenario": "Herri Sanferminak" },
-
-  { "id": 14, "dia": 8, "hora": "20:00", "artista": "Arrats Antitaurinoak: Zindarrok Elektrokarrangarekin", "escenario": "Herri Sanferminak" },
-  { "id": 15, "dia": 8, "hora": "20:00", "artista": "Guri Bost", "escenario": "Herri Sanferminak" },
-  { "id": 16, "dia": 8, "hora": "22:00", "artista": "Eksa, Calié, I.Anai eta Mateo Zikuta", "escenario": "Herri Sanferminak" },
-  { "id": 17, "dia": 8, "hora": "00:00", "artista": "La Safu", "escenario": "Herri Sanferminak" },
-  { "id": 18, "dia": 8, "hora": "01:30", "artista": "DJ Pibikens", "escenario": "Herri Sanferminak" },
-
-  { "id": 19, "dia": 9, "hora": "17:00", "artista": "Pankarta Tailerra", "escenario": "Herri Sanferminak" },
-  { "id": 20, "dia": 9, "hora": "18:30", "artista": "Drag Bingo Musikatua: Poseidonia Oceanica eta Haizemin", "escenario": "Herri Sanferminak" },
-  { "id": 21, "dia": 9, "hora": "18:00", "artista": "Puntero", "escenario": "Herri Sanferminak" },
-  { "id": 22, "dia": 9, "hora": "19:00", "artista": "Iruñyard Sound System", "escenario": "Herri Sanferminak" },
-  { "id": 23, "dia": 9, "hora": "21:00", "artista": "Naxker", "escenario": "Herri Sanferminak" },
-  { "id": 24, "dia": 9, "hora": "22:00", "artista": "Muxutruk", "escenario": "Herri Sanferminak" },
-  { "id": 25, "dia": 9, "hora": "22:45", "artista": "Pintxada Irekia", "escenario": "Herri Sanferminak" },
-
-  { "id": 26, "dia": 10, "hora": "18:00", "artista": "Arrats Antitaurinoak: Palestinaren Aldeko Mania", "escenario": "Herri Sanferminak" },
-  { "id": 27, "dia": 10, "hora": "20:30", "artista": "Izpiak", "escenario": "Herri Sanferminak" },
-  { "id": 28, "dia": 10, "hora": "22:00", "artista": "La Jodedera", "escenario": "Herri Sanferminak" },
-  { "id": 29, "dia": 10, "hora": "23:30", "artista": "Sisklata eta Leidys", "escenario": "Herri Sanferminak" },
-  { "id": 30, "dia": 10, "hora": "00:30", "artista": "Kunbialariak", "escenario": "Herri Sanferminak" },
-  { "id": 31, "dia": 10, "hora": "02:00", "artista": "DJ Atenenas", "escenario": "Herri Sanferminak" },
-
-  { "id": 32, "dia": 11, "hora": "13:30", "artista": "Bermut Mamarratxoa", "escenario": "Herri Sanferminak" },
-  { "id": 33, "dia": 11, "hora": "16:00", "artista": "Bingo Musikatua", "escenario": "Herri Sanferminak" },
-  { "id": 34, "dia": 11, "hora": "19:00", "artista": "Arrats Antitaurinoak: Goxo Txaranga", "escenario": "Herri Sanferminak" },
-  { "id": 35, "dia": 11, "hora": "19:00", "artista": "Kanaleta", "escenario": "Herri Sanferminak" },
-  { "id": 36, "dia": 11, "hora": "20:30", "artista": "Streetwise", "escenario": "Herri Sanferminak" },
-  { "id": 37, "dia": 11, "hora": "22:00", "artista": "Larrain Dantza", "escenario": "Herri Sanferminak" },
-  { "id": 38, "dia": 11, "hora": "22:15", "artista": "Mirua", "escenario": "Herri Sanferminak" },
-  { "id": 39, "dia": 11, "hora": "23:30", "artista": "Bad Sound", "escenario": "Herri Sanferminak" },
-  { "id": 40, "dia": 11, "hora": "01:00", "artista": "Maruxak DJ Set", "escenario": "Herri Sanferminak" },
-
-  { "id": 41, "dia": 12, "hora": "12:00", "artista": "Broken Brothers Brass Band", "escenario": "Herri Sanferminak" },
-  { "id": 42, "dia": 12, "hora": "16:30", "artista": "Ganita Kamuts", "escenario": "Herri Sanferminak" },
-  { "id": 43, "dia": 12, "hora": "19:00", "artista": "Arrats Antitaurinoak: Zindarrok Elektrokarrangaren Urteurena!", "escenario": "Herri Sanferminak" },
-  { "id": 44, "dia": 12, "hora": "20:30", "artista": "Barride", "escenario": "Herri Sanferminak" },
-  { "id": 45, "dia": 12, "hora": "22:00", "artista": "Ziñez", "escenario": "Herri Sanferminak" },
-  { "id": 46, "dia": 12, "hora": "23:15", "artista": "DJ Arima Zaurituak", "escenario": "Herri Sanferminak" },
-  { "id": 47, "dia": 12, "hora": "01:30", "artista": "DJ Abertxandals", "escenario": "Herri Sanferminak" },
-
-  { "id": 48, "dia": 13, "hora": "16:00", "artista": "Arrats Antitaurinoak: Kale Tekno: Obrium, Dorian, Ziur, Zigix", "escenario": "Herri Sanferminak" },
-  { "id": 49, "dia": 13, "hora": "22:30", "artista": "Barniz", "escenario": "Herri Sanferminak" },
-  { "id": 50, "dia": 13, "hora": "00:00", "artista": "Sua", "escenario": "Herri Sanferminak" },
-  { "id": 51, "dia": 13, "hora": "01:00", "artista": "DJ Matalaz", "escenario": "Herri Sanferminak" },
-
-  { "id": 52, "dia": 14, "hora": "11:00", "artista": "Auzolana", "escenario": "Herri Sanferminak" },
-  { "id": 53, "dia": 14, "hora": "13:30", "artista": "Bermut Girotua", "escenario": "Herri Sanferminak" },
-  { "id": 54, "dia": 14, "hora": "14:30", "artista": "HSF-en Bazkaria: 9 Egun, 10 Urte, 11 Borroka!", "escenario": "Herri Sanferminak" },
-  { "id": 55, "dia": 14, "hora": "17:00", "artista": "Kantautorea", "escenario": "Herri Sanferminak" },
-  { "id": 56, "dia": 14, "hora": "19:00", "artista": "Leherketa", "escenario": "Herri Sanferminak" },
-  { "id": 57, "dia": 14, "hora": "20:30", "artista": "Aramu", "escenario": "Herri Sanferminak" },
-  { "id": 58, "dia": 14, "hora": "22:00", "artista": "Le Fanatic", "escenario": "Herri Sanferminak" },
-  { "id": 59, "dia": 14, "hora": "23:30", "artista": "DJ Primo Lu", "escenario": "Herri Sanferminak" }
+  {
+    "id": 1,
+    "dia": 6,
+    "hora": "14:00",
+    "titulo": "Txupinazoa: 9 Egun, 10 Urte, 11 Borroka!",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 2,
+    "dia": 6,
+    "hora": "15:00",
+    "titulo": "Trikiteens",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 3,
+    "dia": 6,
+    "hora": "18:00",
+    "titulo": "Ezpika",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 4,
+    "dia": 6,
+    "hora": "20:00",
+    "titulo": "Los Benis",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 5,
+    "dia": 6,
+    "hora": "22:00",
+    "titulo": "DJ Siwanaba",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 6,
+    "dia": 6,
+    "hora": "00:00",
+    "titulo": "DJ Hiru Hirukiak",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 7,
+    "dia": 7,
+    "hora": "12:30",
+    "titulo": "Kantuz Bermuta",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 8,
+    "dia": 7,
+    "hora": "19:00",
+    "titulo": "Arrats Antitaurinoak: Iruña Antitaurina",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 9,
+    "dia": 7,
+    "hora": "20:00",
+    "titulo": "Hilketa",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 10,
+    "dia": 7,
+    "hora": "21:30",
+    "titulo": "Larrain Dantza",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 11,
+    "dia": 7,
+    "hora": "21:45",
+    "titulo": "Bisaiak",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 12,
+    "dia": 7,
+    "hora": "23:00",
+    "titulo": "Mutiko",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 13,
+    "dia": 7,
+    "hora": "00:30",
+    "titulo": "DJ Ratxetas",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 14,
+    "dia": 8,
+    "hora": "20:00",
+    "titulo": "Arrats Antitaurinoak: Zindarrok Elektrokarrangarekin",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 15,
+    "dia": 8,
+    "hora": "20:00",
+    "titulo": "Guri Bost",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 16,
+    "dia": 8,
+    "hora": "22:00",
+    "titulo": "Eksa, Calié, I.Anai eta Mateo Zikuta",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 17,
+    "dia": 8,
+    "hora": "00:00",
+    "titulo": "La Safu",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 18,
+    "dia": 8,
+    "hora": "01:30",
+    "titulo": "DJ Pibikens",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 19,
+    "dia": 9,
+    "hora": "17:00",
+    "titulo": "Pankarta Tailerra",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 20,
+    "dia": 9,
+    "hora": "18:30",
+    "titulo": "Drag Bingo Musikatua: Poseidonia Oceanica eta Haizemin",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 21,
+    "dia": 9,
+    "hora": "18:00",
+    "titulo": "Puntero",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 22,
+    "dia": 9,
+    "hora": "19:00",
+    "titulo": "Iruñyard Sound System",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 23,
+    "dia": 9,
+    "hora": "21:00",
+    "titulo": "Naxker",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 24,
+    "dia": 9,
+    "hora": "22:00",
+    "titulo": "Muxutruk",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 25,
+    "dia": 9,
+    "hora": "22:45",
+    "titulo": "Pintxada Irekia",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 26,
+    "dia": 10,
+    "hora": "18:00",
+    "titulo": "Arrats Antitaurinoak: Palestinaren Aldeko Mania",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 27,
+    "dia": 10,
+    "hora": "20:30",
+    "titulo": "Izpiak",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 28,
+    "dia": 10,
+    "hora": "22:00",
+    "titulo": "La Jodedera",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 29,
+    "dia": 10,
+    "hora": "23:30",
+    "titulo": "Sisklata eta Leidys",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 30,
+    "dia": 10,
+    "hora": "00:30",
+    "titulo": "Kunbialariak",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 31,
+    "dia": 10,
+    "hora": "02:00",
+    "titulo": "DJ Atenenas",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 32,
+    "dia": 11,
+    "hora": "13:30",
+    "titulo": "Bermut Mamarratxoa",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 33,
+    "dia": 11,
+    "hora": "16:00",
+    "titulo": "Bingo Musikatua",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 34,
+    "dia": 11,
+    "hora": "19:00",
+    "titulo": "Arrats Antitaurinoak: Goxo Txaranga",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 35,
+    "dia": 11,
+    "hora": "19:00",
+    "titulo": "Kanaleta",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 36,
+    "dia": 11,
+    "hora": "20:30",
+    "titulo": "Streetwise",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 37,
+    "dia": 11,
+    "hora": "22:00",
+    "titulo": "Larrain Dantza",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 38,
+    "dia": 11,
+    "hora": "22:15",
+    "titulo": "Mirua",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 39,
+    "dia": 11,
+    "hora": "23:30",
+    "titulo": "Bad Sound",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 40,
+    "dia": 11,
+    "hora": "01:00",
+    "titulo": "Maruxak DJ Set",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 41,
+    "dia": 12,
+    "hora": "12:00",
+    "titulo": "Broken Brothers Brass Band",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 42,
+    "dia": 12,
+    "hora": "16:30",
+    "titulo": "Ganita Kamuts",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 43,
+    "dia": 12,
+    "hora": "19:00",
+    "titulo": "Arrats Antitaurinoak: Zindarrok Elektrokarrangaren Urteurena!",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 44,
+    "dia": 12,
+    "hora": "20:30",
+    "titulo": "Barride",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 45,
+    "dia": 12,
+    "hora": "22:00",
+    "titulo": "Ziñez",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 46,
+    "dia": 12,
+    "hora": "23:15",
+    "titulo": "DJ Arima Zaurituak",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 47,
+    "dia": 12,
+    "hora": "01:30",
+    "titulo": "DJ Abertxandals",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 48,
+    "dia": 13,
+    "hora": "16:00",
+    "titulo": "Arrats Antitaurinoak: Kale Tekno: Obrium, Dorian, Ziur, Zigix",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 49,
+    "dia": 13,
+    "hora": "22:30",
+    "titulo": "Barniz",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 50,
+    "dia": 13,
+    "hora": "00:00",
+    "titulo": "Sua",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 51,
+    "dia": 13,
+    "hora": "01:00",
+    "titulo": "DJ Matalaz",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 52,
+    "dia": 14,
+    "hora": "11:00",
+    "titulo": "Auzolana",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 53,
+    "dia": 14,
+    "hora": "13:30",
+    "titulo": "Bermut Girotua",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 54,
+    "dia": 14,
+    "hora": "14:30",
+    "titulo": "HSF-en Bazkaria: 9 Egun, 10 Urte, 11 Borroka!",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 55,
+    "dia": 14,
+    "hora": "17:00",
+    "titulo": "Kantautorea",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 56,
+    "dia": 14,
+    "hora": "19:00",
+    "titulo": "Leherketa",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 57,
+    "dia": 14,
+    "hora": "20:30",
+    "titulo": "Aramu",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 58,
+    "dia": 14,
+    "hora": "22:00",
+    "titulo": "Le Fanatic",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 59,
+    "dia": 14,
+    "hora": "23:30",
+    "titulo": "DJ Primo Lu",
+    "lugar": "herri",
+    "tipo": "concert"
+  },
+  {
+    "id": 60,
+    "dia": 6,
+    "hora": "21:30",
+    "titulo": "Isabel Aaiún",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 61,
+    "dia": 6,
+    "hora": "23:45",
+    "titulo": "Boney M feat. Maizie Williams",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 62,
+    "dia": 7,
+    "hora": "23:30",
+    "titulo": "Bala",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 63,
+    "dia": 8,
+    "hora": "00:40",
+    "titulo": "Koma",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 64,
+    "dia": 8,
+    "hora": "23:45",
+    "titulo": "Motxila 21",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 65,
+    "dia": 9,
+    "hora": "00:50",
+    "titulo": "Brigade Loco",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 66,
+    "dia": 9,
+    "hora": "23:45",
+    "titulo": "Neomak",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 67,
+    "dia": 10,
+    "hora": "00:50",
+    "titulo": "Shinova",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 68,
+    "dia": 10,
+    "hora": "23:45",
+    "titulo": "Marlena",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 69,
+    "dia": 11,
+    "hora": "23:30",
+    "titulo": "Ojete Calor",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 70,
+    "dia": 12,
+    "hora": "23:30",
+    "titulo": "Merina Gris",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 71,
+    "dia": 13,
+    "hora": "00:50",
+    "titulo": "La Txama",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 72,
+    "dia": 13,
+    "hora": "23:30",
+    "titulo": "Hofe",
+    "lugar": "castillo",
+    "tipo": "concert"
+  },
+  {
+    "id": 73,
+    "dia": 14,
+    "hora": "00:40",
+    "titulo": "Jarfaiter",
+    "lugar": "castillo",
+    "tipo": "concert"
+  }
 ]
