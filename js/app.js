@@ -13,14 +13,28 @@ async function iniciarApp() {
         diaActual = obtenerDiaInicial();
 
         pintarEventos();
+        document.getElementById("btn-anterior").addEventListener("click", () => {
 
-    } catch (error) {
+            if (diaActual > 6) {
+                diaActual--;
+                pintarEventos();
+            }
+        });
+
+        document.getElementById("btn-siguiente").addEventListener("click", () => {
+
+           if (diaActual < 14) {
+                diaActual++;
+                pintarEventos();
+            }
+        });
+
+        } catch (error) {
 
         console.error(error);
         proximos.innerHTML = `<p>${error.message}</p>`;
 
-    }
-
+        }
 }
 
 function pintarEventos() {
