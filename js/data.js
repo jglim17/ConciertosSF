@@ -1,3 +1,4 @@
+// Datos globales
 let conciertos = [];
 let lugares = {};
 let gigantes = [];
@@ -7,19 +8,26 @@ async function cargarDatos() {
 
     async function cargar(nombre) {
 
-        const res = await fetch(`data/${nombre}.json`);
+        const respuesta = await fetch(`data/${nombre}.json`);
 
-        const texto = await res.text();
+        if (!respuesta.ok) {
+            throw new Error(`No se pudo cargar ${nombre}.json`);
+        }
 
-        console.log(nombre, texto);
-
-        return JSON.parse(texto);
+        return await respuesta.json();
 
     }
 
-    conciertos = await cargar("conciertos");
-    lugares = await cargar("lugares");
-    gigantes = await cargar("gigantes");
-    fuegos = await cargar("fuegos");
+    [
+        conciertos,
+        lugares,
+        gigantes,
+        fuegos
+    ] = await Promise.all([
+        cargar("conciertos"),
+        cargar("lugares"),
+        cargar("gigantes"),
+        cargar("fuegos")
+    ]);
 
 }
