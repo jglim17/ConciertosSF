@@ -42,7 +42,6 @@ function aplicarIdioma() {
 
     document.getElementById("app-title").textContent = textos.app.title;
 
-    // Solo cambia el subtítulo si existe
     const subtitulo = document.getElementById("app-subtitle");
 
     if (subtitulo && textos.app.subtitle) {
