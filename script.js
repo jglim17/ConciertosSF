@@ -7,7 +7,8 @@ function actualizarCuentaAtras() {
     const contador = document.getElementById("cuenta-atras");
 
     if (diferencia <= 0) {
-        contador.innerHTML = "🎉 ¡Ya es San Fermín!";
+        contador.innerHTML =
+`⏳ Faltan ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos`;
         return;
     }
 
