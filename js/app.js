@@ -47,6 +47,12 @@ function pintarEventos() {
 
             proximos.appendChild(tituloDia);
 
+            grupos[dia].sort((a, b) => {
+                const [horaA, minutoA] = a.hora.split(":").map(Number);
+                const [horaB, minutoB] = b.hora.split(":").map(Number);
+            return (horaA * 60 + minutoA) - (horaB * 60 + minutoB);
+            });
+
             grupos[dia].forEach(concierto => {
 
                 const tarjeta = document.createElement("div");
