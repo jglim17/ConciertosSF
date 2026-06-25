@@ -1,1 +1,34 @@
-a
+{
+  "app": {
+    "title": "SFAlDía",
+    "subtitle": "2026ko SANB FERMINAK"
+  },
+
+  "menu": {
+    "today": "Gaur",
+    "explore": "Nabigatu",
+    "favorites": "Nere Sanferminak"
+  },
+
+  "sections": {
+    "now": "Orain",
+    "events": "Ekitaldiak"
+  },
+
+  "filters": {
+    "all": "Denak",
+    "concerts": "Kontzertuak",
+    "giants": "Erraldoiak",
+    "fireworks": "Suak",
+    "others": "Besteak"
+  },
+
+  "locations": {
+
+  },
+
+  "messages": {
+    "loading": "Kargatzen...",
+    "noEvents": "Ez dago ekitaldirik"
+  }
+}
