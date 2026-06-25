@@ -1,3 +1,4 @@
+let diaActual = 6;
 async function iniciarApp() {
 
     const proximos = document.getElementById("proximos");
