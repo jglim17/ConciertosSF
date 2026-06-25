@@ -25,14 +25,7 @@ actualizarCuentaAtras();
 setInterval(actualizarCuentaAtras, 1000);
 
 async function cargarConciertos() {
-    try {
-        const respuesta = await fetch("data/conciertos.json");
-        const conciertos = await respuesta.json();
-
-        console.log(conciertos);
-    } catch (error) {
-        console.error("Error cargando conciertos:", error);
-    }
+    document.getElementById("proximos").innerHTML = "Estoy ejecutando app.js";
 }
 
 cargarConciertos();
