@@ -28,11 +28,11 @@ async function cargarConciertos() {
             .sort((a, b) => a - b)
             .forEach(dia => {
 
-                const titulo = document.createElement("h2");
-                titulo.textContent = `📅 ${dia} de julio`;
-                titulo.style.marginTop = "30px";
+                const tituloDia = document.createElement("h2");
+                tituloDia.textContent = `📅 ${dia} de julio`;
+                tituloDia.style.marginTop = "30px";
 
-                proximos.appendChild(titulo);
+                proximos.appendChild(tituloDia);
 
                 grupos[dia].forEach(concierto => {
 
@@ -57,8 +57,8 @@ async function cargarConciertos() {
     }
 }
 
-// De momento devuelve la clave del lugar.
-// Más adelante leerá locations.json y lo traducirá automáticamente.
+// De momento devuelve el identificador del lugar.
+// Más adelante leerá locations.json y mostrará el nombre traducido.
 function obtenerLugar(lugar) {
     return lugar;
 }
