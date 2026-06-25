@@ -4,10 +4,10 @@ async function iniciarApp() {
 
     try {
 
-        // Cargar todos los datos una sola vez
+        await cargarIdioma();
+
         await cargarDatos();
 
-        // Pintar eventos
         pintarEventos();
 
     } catch (error) {
