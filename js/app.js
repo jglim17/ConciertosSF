@@ -7,7 +7,7 @@ async function iniciarApp() {
         // Cargar todos los datos una sola vez
         await cargarDatos();
 
-        // Dibujar los eventos
+        // Pintar eventos
         pintarEventos();
 
     } catch (error) {
@@ -27,6 +27,7 @@ function pintarEventos() {
 
     const grupos = {};
 
+    // Agrupar por día
     conciertos.forEach(concierto => {
 
         if (!grupos[concierto.dia]) {
@@ -42,15 +43,16 @@ function pintarEventos() {
         .forEach(dia => {
 
             const tituloDia = document.createElement("h2");
-            tituloDia.textContent = `📅 ${dia} de julio`;
+            tituloDia.textContent = `📅 ${obtenerFecha(dia)}`;
             tituloDia.style.marginTop = "30px";
 
             proximos.appendChild(tituloDia);
 
+            // Ordenar los eventos del día por hora
             grupos[dia].sort((a, b) => {
-                const [horaA, minutoA] = a.hora.split(":").map(Number);
-                const [horaB, minutoB] = b.hora.split(":").map(Number);
-            return (horaA * 60 + minutoA) - (horaB * 60 + minutoB);
+
+                return convertirHora(a.hora) - convertirHora(b.hora);
+
             });
 
             grupos[dia].forEach(concierto => {
@@ -72,6 +74,19 @@ function pintarEventos() {
 
 }
 
+function convertirHora(hora) {
+
+    let [h, m] = hora.split(":").map(Number);
+
+    // Entre las 00:00 y las 05:59 pertenece al final del día
+    if (h < 6) {
+        h += 24;
+    }
+
+    return h * 60 + m;
+
+}
+
 function obtenerLugar(idLugar) {
 
     if (!lugares[idLugar]) {
@@ -79,6 +94,26 @@ function obtenerLugar(idLugar) {
     }
 
     return lugares[idLugar][idioma] || lugares[idLugar].es;
+
+}
+
+function obtenerFecha(dia) {
+
+    switch (idioma) {
+
+        case "eu":
+            return `${dia} uztaila`;
+
+        case "en":
+            return `July ${dia}`;
+
+        case "fr":
+            return `${dia} juillet`;
+
+        default:
+            return `${dia} de julio`;
+
+    }
 
 }
 
