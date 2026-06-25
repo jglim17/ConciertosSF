@@ -16,10 +16,40 @@ main {
 /* ===== Cabecera ===== */
 
 header {
+    position: relative;
     background: #c8102e;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.language-selector a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.language-selector a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.language-selector a:visited {
+    color: white;
+}
+
+.language-selector a.oculto {
+    display: none;
 }
 
 #cuenta-atras {
@@ -93,6 +123,7 @@ h2 {
 /* ===== Responsive ===== */
 
 @media (max-width: 600px) {
+
     header {
         padding: 16px;
     }
@@ -104,5 +135,12 @@ h2 {
     .menu a {
         padding: 14px 6px;
         font-size: 0.95rem;
+    }
+
+    .language-selector {
+        top: 8px;
+        right: 10px;
+        font-size: 12px;
+        gap: 5px;
     }
 }
