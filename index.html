@@ -9,32 +9,41 @@
 <body>
 
 <header>
-    <h1>SAN FERMIN 2026</h1>
+
+    <div class="language-selector">
+        <a href="#" id="lang-es" onclick="cambiarIdioma('es')">ES</a>
+        <a href="#" id="lang-eu" onclick="cambiarIdioma('eu')">EU</a>
+        <a href="#" id="lang-en" onclick="cambiarIdioma('en')">EN</a>
+        <a href="#" id="lang-fr" onclick="cambiarIdioma('fr')">FR</a>
+    </div>
+
+    <h1 id="app-title">SAN FERMIN 2026</h1>
 
     <div id="cuenta-atras">
         ⏳ Faltan...
     </div>
 
-    <p>Conciertos</p>
+    <p id="app-subtitle">Conciertos</p>
+
 </header>
 
 <nav class="menu">
-    <a href="#" class="activo">🏠 Hoy</a>
-    <a href="#">🔍 Explorar</a>
-    <a href="#">⭐ Favoritos</a>
+    <a href="#" class="activo" id="menu-today">🏠 Hoy</a>
+    <a href="#" id="menu-explore">🔍 Explorar</a>
+    <a href="#" id="menu-favorites">⭐ Favoritos</a>
 </nav>
 
 <main>
 
     <section>
-        <h2>🔴 Ahora mismo</h2>
+        <h2 id="section-now">🔴 Ahora mismo</h2>
         <div id="ahora">
             No hay conciertos en este momento.
         </div>
     </section>
 
     <section>
-        <h2>⏭️ Próximos conciertos</h2>
+        <h2 id="section-events">⏭️ Eventos</h2>
         <div id="proximos">
             Cargando...
         </div>
@@ -43,6 +52,7 @@
 </main>
 
 <script src="js/countdown.js"></script>
+<script src="js/language.js"></script>
 <script src="js/app.js"></script>
 <script src="js/ui.js"></script>
 
