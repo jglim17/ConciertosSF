@@ -1,4 +1,4 @@
-alert("APP NUEVA");
+
 
 async function cargarConciertos() {
     const proximos = document.getElementById("proximos");
