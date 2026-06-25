@@ -9,12 +9,12 @@ async function cargarConciertos() {
 
         conciertos.forEach(concierto => {
             html += `
-                <div class="concierto">
-                    <h3>${concierto.artista}</h3>
-                    <p>🕒 ${concierto.hora}</p>
-                    <p>📍 ${concierto.escenario}</p>
-                </div>
-            `;
+    <div class="concierto">
+        <h3>${concierto.artista}</h3>
+        <p>🕒 ${concierto.hora}</p>
+        <p>📍 ${concierto.escenario}</p>
+    </div>
+`;
         });
 
         div.innerHTML = html;
