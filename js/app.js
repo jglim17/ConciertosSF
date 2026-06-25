@@ -1,28 +1,36 @@
 async function cargarConciertos() {
-    const div = document.getElementById("proximos");
+    const proximos = document.getElementById("proximos");
 
     try {
         const respuesta = await fetch("data/conciertos.json");
+
+        if (!respuesta.ok) {
+            throw new Error("No se pudo cargar conciertos.json");
+        }
+
         const conciertos = await respuesta.json();
 
-        let html = "";
+        proximos.innerHTML = "";
 
         conciertos.forEach(concierto => {
-            html += `
-    <div class="concierto">
-        <h3>${concierto.artista}</h3>
-        <p>🕒 ${concierto.hora}</p>
-        <p>📍 ${concierto.escenario}</p>
-    </div>
-`;
+
+            const tarjeta = document.createElement("div");
+            tarjeta.className = "concierto";
+
+            tarjeta.innerHTML = `
+                <h3>${concierto.artista}</h3>
+                <p>🕒 ${concierto.hora}</p>
+                <p>📍 ${concierto.escenario}</p>
+            `;
+
+            proximos.appendChild(tarjeta);
+
         });
 
-        div.innerHTML = html;
-
     } catch (error) {
-        div.innerHTML = "❌ Error cargando conciertos";
         console.error(error);
+        proximos.innerHTML = `<p>${error.message}</p>`;
     }
 }
 
-cargarConciertos();
+document.addEventListener("DOMContentLoaded", cargarConciertos);
