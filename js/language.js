@@ -7,6 +7,8 @@ async function cargarIdioma() {
     const respuesta = await fetch(`lang/${idioma}.json`);
     textos = await respuesta.json();
 
+    console.log(textos);
+
     aplicarIdioma();
     actualizarSelectorIdiomas();
 
