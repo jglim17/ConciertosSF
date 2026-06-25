@@ -48,8 +48,16 @@ function pintarEventos() {
 
             proximos.appendChild(tituloDia);
 
-            // Ordenar los eventos del día por hora
+            // Ordenar eventos por hora
             grupos[dia].sort((a, b) => {
+
+                console.log(
+                    a.hora,
+                    convertirHora(a.hora),
+                    "|",
+                    b.hora,
+                    convertirHora(b.hora)
+                );
 
                 return convertirHora(a.hora) - convertirHora(b.hora);
 
@@ -78,7 +86,7 @@ function convertirHora(hora) {
 
     let [h, m] = hora.split(":").map(Number);
 
-    // Entre las 00:00 y las 05:59 pertenece al final del día
+    // Las horas de madrugada se consideran al final del día
     if (h < 6) {
         h += 24;
     }
