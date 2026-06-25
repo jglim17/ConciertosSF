@@ -27,7 +27,6 @@ function pintarEventos() {
 
     const grupos = {};
 
-    // Agrupar por día
     conciertos.forEach(concierto => {
 
         if (!grupos[concierto.dia]) {
@@ -42,26 +41,17 @@ function pintarEventos() {
         .sort((a, b) => a - b)
         .forEach(dia => {
 
+            console.log("ANTES", dia, grupos[dia].map(c => c.hora));
+
+            grupos[dia].sort((a, b) => convertirHora(a.hora) - convertirHora(b.hora));
+
+            console.log("DESPUÉS", dia, grupos[dia].map(c => c.hora));
+
             const tituloDia = document.createElement("h2");
             tituloDia.textContent = `📅 ${obtenerFecha(dia)}`;
             tituloDia.style.marginTop = "30px";
 
             proximos.appendChild(tituloDia);
-
-            // Ordenar eventos por hora
-            grupos[dia].sort((a, b) => {
-
-                console.log(
-                    a.hora,
-                    convertirHora(a.hora),
-                    "|",
-                    b.hora,
-                    convertirHora(b.hora)
-                );
-
-                return convertirHora(a.hora) - convertirHora(b.hora);
-
-            });
 
             grupos[dia].forEach(concierto => {
 
