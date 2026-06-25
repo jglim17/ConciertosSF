@@ -2,17 +2,16 @@ let idioma = localStorage.getItem("idioma") || "es";
 let textos = {};
 
 // Carga el archivo JSON del idioma
-async function cambiarIdioma(nuevoIdioma) {
+async function cargarIdioma() {
 
-    idioma = nuevoIdioma;
+    const respuesta = await fetch(`lang/${idioma}.json`);
+    textos = await respuesta.json();
 
-    localStorage.setItem("idioma", idioma);
-
-    await cargarIdioma();
-
-    pintarEventos();
+    aplicarIdioma();
+    actualizarSelectorIdiomas();
 
 }
+
 // Cambia el idioma
 async function cambiarIdioma(nuevoIdioma) {
 
@@ -23,7 +22,8 @@ async function cambiarIdioma(nuevoIdioma) {
     await cargarIdioma();
 
     // Volver a pintar los eventos con el nuevo idioma
-    cargarConciertos();
+    pintarEventos();
+
 }
 
 // Aplica los textos al HTML
@@ -38,6 +38,7 @@ function aplicarIdioma() {
 
     document.getElementById("section-now").innerHTML = "🔴 " + textos.sections.now;
     document.getElementById("section-events").innerHTML = "⏭️ " + textos.sections.events;
+
 }
 
 // Oculta el idioma seleccionado
@@ -57,5 +58,5 @@ function actualizarSelectorIdiomas() {
 
 }
 
-// Cargar al abrir la página
+// Cargar el idioma al abrir la página
 document.addEventListener("DOMContentLoaded", cargarIdioma);
