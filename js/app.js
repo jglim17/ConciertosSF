@@ -2,7 +2,7 @@ async function cargarConciertos() {
     const div = document.getElementById("proximos");
 
     try {
-        const respuesta = await fetch("data/conciertos.json");
+        const respuesta = await fetch("./data/conciertos.json");
 
         if (!respuesta.ok) {
             throw new Error("No se pudo cargar el archivo.");
@@ -22,9 +22,9 @@ async function cargarConciertos() {
         });
 
     } catch (error) {
-        div.innerHTML = "❌ Error cargando conciertos.";
-        console.error(error);
-    }
+    div.innerHTML = error.message;
+    console.error(error);
+}
 }
 
 cargarConciertos();
