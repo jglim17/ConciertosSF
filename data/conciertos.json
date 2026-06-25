@@ -1,37 +1,69 @@
 [
-  {
-    "id": 1,
-    "dia": 6,
-    "hora": "15:00",
-    "artista": "Trikiteens",
-    "escenario": "Herri Sanferminak"
-  },
-  {
-    "id": 2,
-    "dia": 6,
-    "hora": "18:00",
-    "artista": "Ezpika",
-    "escenario": "Herri Sanferminak"
-  },
-  {
-    "id": 3,
-    "dia": 6,
-    "hora": "20:00",
-    "artista": "Los Benis",
-    "escenario": "Herri Sanferminak"
-  },
-  {
-    "id": 4,
-    "dia": 6,
-    "hora": "22:00",
-    "artista": "DJ Siwanaba",
-    "escenario": "Herri Sanferminak"
-  },
-  {
-    "id": 5,
-    "dia": 6,
-    "hora": "00:00",
-    "artista": "DJ Hiru Hirukiak",
-    "escenario": "Herri Sanferminak"
-  }
+  { "id": 1, "dia": 6, "hora": "14:00", "artista": "Txupinazoa: 9 Egun, 10 Urte, 11 Borroka!", "escenario": "Herri Sanferminak" },
+  { "id": 2, "dia": 6, "hora": "15:00", "artista": "Trikiteens", "escenario": "Herri Sanferminak" },
+  { "id": 3, "dia": 6, "hora": "18:00", "artista": "Ezpika", "escenario": "Herri Sanferminak" },
+  { "id": 4, "dia": 6, "hora": "20:00", "artista": "Los Benis", "escenario": "Herri Sanferminak" },
+  { "id": 5, "dia": 6, "hora": "22:00", "artista": "DJ Siwanaba", "escenario": "Herri Sanferminak" },
+  { "id": 6, "dia": 6, "hora": "00:00", "artista": "DJ Hiru Hirukiak", "escenario": "Herri Sanferminak" },
+
+  { "id": 7, "dia": 7, "hora": "12:30", "artista": "Kantuz Bermuta", "escenario": "Herri Sanferminak" },
+  { "id": 8, "dia": 7, "hora": "19:00", "artista": "Arrats Antitaurinoak: Iruña Antitaurina", "escenario": "Herri Sanferminak" },
+  { "id": 9, "dia": 7, "hora": "20:00", "artista": "Hilketa", "escenario": "Herri Sanferminak" },
+  { "id": 10, "dia": 7, "hora": "21:30", "artista": "Larrain Dantza", "escenario": "Herri Sanferminak" },
+  { "id": 11, "dia": 7, "hora": "21:45", "artista": "Bisaiak", "escenario": "Herri Sanferminak" },
+  { "id": 12, "dia": 7, "hora": "23:00", "artista": "Mutiko", "escenario": "Herri Sanferminak" },
+  { "id": 13, "dia": 7, "hora": "00:30", "artista": "DJ Ratxetas", "escenario": "Herri Sanferminak" },
+
+  { "id": 14, "dia": 8, "hora": "20:00", "artista": "Arrats Antitaurinoak: Zindarrok Elektrokarrangarekin", "escenario": "Herri Sanferminak" },
+  { "id": 15, "dia": 8, "hora": "20:00", "artista": "Guri Bost", "escenario": "Herri Sanferminak" },
+  { "id": 16, "dia": 8, "hora": "22:00", "artista": "Eksa, Calié, I.Anai eta Mateo Zikuta", "escenario": "Herri Sanferminak" },
+  { "id": 17, "dia": 8, "hora": "00:00", "artista": "La Safu", "escenario": "Herri Sanferminak" },
+  { "id": 18, "dia": 8, "hora": "01:30", "artista": "DJ Pibikens", "escenario": "Herri Sanferminak" },
+
+  { "id": 19, "dia": 9, "hora": "17:00", "artista": "Pankarta Tailerra", "escenario": "Herri Sanferminak" },
+  { "id": 20, "dia": 9, "hora": "18:30", "artista": "Drag Bingo Musikatua: Poseidonia Oceanica eta Haizemin", "escenario": "Herri Sanferminak" },
+  { "id": 21, "dia": 9, "hora": "18:00", "artista": "Puntero", "escenario": "Herri Sanferminak" },
+  { "id": 22, "dia": 9, "hora": "19:00", "artista": "Iruñyard Sound System", "escenario": "Herri Sanferminak" },
+  { "id": 23, "dia": 9, "hora": "21:00", "artista": "Naxker", "escenario": "Herri Sanferminak" },
+  { "id": 24, "dia": 9, "hora": "22:00", "artista": "Muxutruk", "escenario": "Herri Sanferminak" },
+  { "id": 25, "dia": 9, "hora": "22:45", "artista": "Pintxada Irekia", "escenario": "Herri Sanferminak" },
+
+  { "id": 26, "dia": 10, "hora": "18:00", "artista": "Arrats Antitaurinoak: Palestinaren Aldeko Mania", "escenario": "Herri Sanferminak" },
+  { "id": 27, "dia": 10, "hora": "20:30", "artista": "Izpiak", "escenario": "Herri Sanferminak" },
+  { "id": 28, "dia": 10, "hora": "22:00", "artista": "La Jodedera", "escenario": "Herri Sanferminak" },
+  { "id": 29, "dia": 10, "hora": "23:30", "artista": "Sisklata eta Leidys", "escenario": "Herri Sanferminak" },
+  { "id": 30, "dia": 10, "hora": "00:30", "artista": "Kunbialariak", "escenario": "Herri Sanferminak" },
+  { "id": 31, "dia": 10, "hora": "02:00", "artista": "DJ Atenenas", "escenario": "Herri Sanferminak" },
+
+  { "id": 32, "dia": 11, "hora": "13:30", "artista": "Bermut Mamarratxoa", "escenario": "Herri Sanferminak" },
+  { "id": 33, "dia": 11, "hora": "16:00", "artista": "Bingo Musikatua", "escenario": "Herri Sanferminak" },
+  { "id": 34, "dia": 11, "hora": "19:00", "artista": "Arrats Antitaurinoak: Goxo Txaranga", "escenario": "Herri Sanferminak" },
+  { "id": 35, "dia": 11, "hora": "19:00", "artista": "Kanaleta", "escenario": "Herri Sanferminak" },
+  { "id": 36, "dia": 11, "hora": "20:30", "artista": "Streetwise", "escenario": "Herri Sanferminak" },
+  { "id": 37, "dia": 11, "hora": "22:00", "artista": "Larrain Dantza", "escenario": "Herri Sanferminak" },
+  { "id": 38, "dia": 11, "hora": "22:15", "artista": "Mirua", "escenario": "Herri Sanferminak" },
+  { "id": 39, "dia": 11, "hora": "23:30", "artista": "Bad Sound", "escenario": "Herri Sanferminak" },
+  { "id": 40, "dia": 11, "hora": "01:00", "artista": "Maruxak DJ Set", "escenario": "Herri Sanferminak" },
+
+  { "id": 41, "dia": 12, "hora": "12:00", "artista": "Broken Brothers Brass Band", "escenario": "Herri Sanferminak" },
+  { "id": 42, "dia": 12, "hora": "16:30", "artista": "Ganita Kamuts", "escenario": "Herri Sanferminak" },
+  { "id": 43, "dia": 12, "hora": "19:00", "artista": "Arrats Antitaurinoak: Zindarrok Elektrokarrangaren Urteurena!", "escenario": "Herri Sanferminak" },
+  { "id": 44, "dia": 12, "hora": "20:30", "artista": "Barride", "escenario": "Herri Sanferminak" },
+  { "id": 45, "dia": 12, "hora": "22:00", "artista": "Ziñez", "escenario": "Herri Sanferminak" },
+  { "id": 46, "dia": 12, "hora": "23:15", "artista": "DJ Arima Zaurituak", "escenario": "Herri Sanferminak" },
+  { "id": 47, "dia": 12, "hora": "01:30", "artista": "DJ Abertxandals", "escenario": "Herri Sanferminak" },
+
+  { "id": 48, "dia": 13, "hora": "16:00", "artista": "Arrats Antitaurinoak: Kale Tekno: Obrium, Dorian, Ziur, Zigix", "escenario": "Herri Sanferminak" },
+  { "id": 49, "dia": 13, "hora": "22:30", "artista": "Barniz", "escenario": "Herri Sanferminak" },
+  { "id": 50, "dia": 13, "hora": "00:00", "artista": "Sua", "escenario": "Herri Sanferminak" },
+  { "id": 51, "dia": 13, "hora": "01:00", "artista": "DJ Matalaz", "escenario": "Herri Sanferminak" },
+
+  { "id": 52, "dia": 14, "hora": "11:00", "artista": "Auzolana", "escenario": "Herri Sanferminak" },
+  { "id": 53, "dia": 14, "hora": "13:30", "artista": "Bermut Girotua", "escenario": "Herri Sanferminak" },
+  { "id": 54, "dia": 14, "hora": "14:30", "artista": "HSF-en Bazkaria: 9 Egun, 10 Urte, 11 Borroka!", "escenario": "Herri Sanferminak" },
+  { "id": 55, "dia": 14, "hora": "17:00", "artista": "Kantautorea", "escenario": "Herri Sanferminak" },
+  { "id": 56, "dia": 14, "hora": "19:00", "artista": "Leherketa", "escenario": "Herri Sanferminak" },
+  { "id": 57, "dia": 14, "hora": "20:30", "artista": "Aramu", "escenario": "Herri Sanferminak" },
+  { "id": 58, "dia": 14, "hora": "22:00", "artista": "Le Fanatic", "escenario": "Herri Sanferminak" },
+  { "id": 59, "dia": 14, "hora": "23:30", "artista": "DJ Primo Lu", "escenario": "Herri Sanferminak" }
 ]
