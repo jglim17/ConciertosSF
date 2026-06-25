@@ -583,4 +583,133 @@
     "lugar": "castillo",
     "tipo": "concert"
   }
+    ,
+  {
+    "id": 74,
+    "dia": 7,
+    "hora": "21:00",
+    "titulo": "Lady Bueno",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 75,
+    "dia": 8,
+    "hora": "21:00",
+    "titulo": "Kimbambá",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 76,
+    "dia": 9,
+    "hora": "21:00",
+    "titulo": "DJ Arsenike",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 77,
+    "dia": 10,
+    "hora": "21:00",
+    "titulo": "Albina y Donatela",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 78,
+    "dia": 11,
+    "hora": "21:00",
+    "titulo": "Mikel Sevillano",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 79,
+    "dia": 12,
+    "hora": "21:00",
+    "titulo": "Hagoan",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 80,
+    "dia": 13,
+    "hora": "21:00",
+    "titulo": "Bacardit",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 81,
+    "dia": 14,
+    "hora": "21:30",
+    "titulo": "River Newt",
+    "lugar": "fueros-zona-joven",
+    "tipo": "concert"
+  },
+  {
+    "id": 82,
+    "dia": 6,
+    "hora": "23:30",
+    "titulo": "Lucía Salas & JBeren",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 83,
+    "dia": 7,
+    "hora": "23:30",
+    "titulo": "Jorge Cremades",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 84,
+    "dia": 8,
+    "hora": "23:30",
+    "titulo": "Fiestazo Megastar con DJ Guillem Climent",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 85,
+    "dia": 9,
+    "hora": "23:30",
+    "titulo": "Euskadi Gaztea con Oihan Vega",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 86,
+    "dia": 10,
+    "hora": "23:30",
+    "titulo": "Europa FM con Uri Farré",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 87,
+    "dia": 11,
+    "hora": "23:30",
+    "titulo": "Fiestazo LOCA URBAN",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 88,
+    "dia": 12,
+    "hora": "23:30",
+    "titulo": "Los 40 Urban con Ramsés López El Faraón",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  },
+  {
+    "id": 89,
+    "dia": 13,
+    "hora": "23:30",
+    "titulo": "Patiwi",
+    "lugar": "fueros-sound-fermin",
+    "tipo": "concert"
+  }
 ]
