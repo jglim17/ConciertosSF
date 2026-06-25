@@ -1,10 +1,6 @@
-// Idioma actual
-window.idioma = localStorage.getItem("idioma") || "es";
+let idioma = localStorage.getItem("idioma") || "es";
+let textos = {};
 
-// Textos del idioma
-window.textos = {};
-
-// Carga el archivo JSON del idioma
 async function cargarIdioma() {
 
     const respuesta = await fetch(`lang/${idioma}.json`);
@@ -15,7 +11,6 @@ async function cargarIdioma() {
 
 }
 
-// Cambia el idioma
 async function cambiarIdioma(nuevoIdioma) {
 
     idioma = nuevoIdioma;
@@ -24,45 +19,50 @@ async function cambiarIdioma(nuevoIdioma) {
 
     await cargarIdioma();
 
-    // Volver a pintar los eventos con el nuevo idioma
-    pintarEventos();
+    // Redibujar los eventos con el nuevo idioma
+    if (typeof pintarEventos === "function") {
+        pintarEventos();
+    }
 
 }
 
-// Devuelve un texto del JSON usando una ruta.
-// Ejemplo: obtenerTexto("months.july")
 function obtenerTexto(ruta) {
 
     return ruta.split(".").reduce((obj, clave) => obj?.[clave], textos);
 
 }
 
-// Aplica los textos al HTML
 function aplicarIdioma() {
 
     document.getElementById("app-title").textContent = textos.app.title;
 
-    document.getElementById("menu-today").innerHTML = "🏠 " + textos.menu.today;
-    document.getElementById("menu-explore").innerHTML = "🔍 " + textos.menu.explore;
-    document.getElementById("menu-favorites").innerHTML = "⭐ " + textos.menu.favorites;
+    document.getElementById("menu-today").innerHTML =
+        "🏠 " + textos.menu.today;
 
-    document.getElementById("section-now").innerHTML = "🔴 " + textos.sections.now;
-    document.getElementById("section-events").innerHTML = "⏭️ " + textos.sections.events;
+    document.getElementById("menu-explore").innerHTML =
+        "🔍 " + textos.menu.explore;
+
+    document.getElementById("menu-favorites").innerHTML =
+        "⭐ " + textos.menu.favorites;
+
+    document.getElementById("section-now").innerHTML =
+        "🔴 " + textos.sections.now;
+
+    document.getElementById("section-events").innerHTML =
+        "⏭️ " + textos.sections.events;
 
 }
 
-// Oculta el idioma seleccionado
 function actualizarSelectorIdiomas() {
 
     ["es", "eu", "en", "fr"].forEach(codigo => {
 
         const enlace = document.getElementById("lang-" + codigo);
 
-        enlace.style.display = (codigo === idioma) ? "none" : "inline";
+        enlace.style.display = (codigo === idioma)
+            ? "none"
+            : "inline";
 
     });
 
 }
-
-// Cargar el idioma al abrir la página
-document.addEventListener("DOMContentLoaded", cargarIdioma);
