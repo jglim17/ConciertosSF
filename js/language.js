@@ -12,13 +12,16 @@ async function cargarIdioma() {
 }
 
 // Cambia el idioma
-function cambiarIdioma(nuevoIdioma) {
+async function cambiarIdioma(nuevoIdioma) {
 
     idioma = nuevoIdioma;
 
     localStorage.setItem("idioma", idioma);
 
-    cargarIdioma();
+    await cargarIdioma();
+
+    // Volver a pintar los eventos con el nuevo idioma
+    cargarConciertos();
 }
 
 // Aplica los textos al HTML
