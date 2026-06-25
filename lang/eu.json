@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "SFAlDía",
-    "subtitle": "2026ko SANB FERMINAK"
+    "subtitle": "2026ko SAN FERMINAK"
   },
 
   "menu": {
@@ -31,4 +31,7 @@
     "loading": "Kargatzen...",
     "noEvents": "Ez dago ekitaldirik"
   }
+  "months": {
+    "july": "Uztailak"
+}
 }
