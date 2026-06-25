@@ -1,30 +1,9 @@
 async function cargarConciertos() {
     const div = document.getElementById("proximos");
 
-    try {
-        const respuesta = await fetch("./data/conciertos.json");
+    const respuesta = await fetch("data/conciertos.json");
+    const conciertos = await respuesta.json();
 
-        if (!respuesta.ok) {
-            throw new Error("No se pudo cargar el archivo.");
-        }
-
-        const conciertos = await respuesta.json();
-
-        div.innerHTML = "";
-
-        conciertos.forEach(concierto => {
-            div.innerHTML += `
-                <div class="concierto">
-                    <strong>${concierto.hora}</strong> - ${concierto.artista}<br>
-                    <small>${concierto.escenario}</small>
-                </div>
-            `;
-        });
-
-    } catch (error) {
-    div.innerHTML = error.message;
-    console.error(error);
+    div.innerHTML = JSON.stringify(conciertos);
 }
-}
-
 cargarConciertos();
