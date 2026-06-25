@@ -2,15 +2,17 @@ let idioma = localStorage.getItem("idioma") || "es";
 let textos = {};
 
 // Carga el archivo JSON del idioma
-async function cargarIdioma() {
+async function cambiarIdioma(nuevoIdioma) {
 
-    const respuesta = await fetch(`lang/${idioma}.json`);
-    textos = await respuesta.json();
+    idioma = nuevoIdioma;
 
-    aplicarIdioma();
-    actualizarSelectorIdiomas();
+    localStorage.setItem("idioma", idioma);
+
+    await cargarIdioma();
+
+    pintarEventos();
+
 }
-
 // Cambia el idioma
 async function cambiarIdioma(nuevoIdioma) {
 
