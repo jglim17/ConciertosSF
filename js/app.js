@@ -99,17 +99,17 @@ function obtenerFecha(dia) {
 
     switch (idioma) {
 
-        case "eu":
-            return `${dia} uztaila`;
-
         case "en":
-            return `July ${dia}`;
+            return `${textos.months.july} ${dia}`;
+
+        case "eu":
+            return `${dia} ${textos.months.july}`;
 
         case "fr":
-            return `${dia} juillet`;
+            return `${dia} ${textos.months.july}`;
 
         default:
-            return `${dia} de julio`;
+            return `${dia} de ${textos.months.july}`;
 
     }
 
