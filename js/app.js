@@ -4,9 +4,10 @@ async function iniciarApp() {
 
     try {
 
-        // Cargar los datos una sola vez
+        // Cargar todos los datos una sola vez
         await cargarDatos();
 
+        // Dibujar los eventos
         pintarEventos();
 
     } catch (error) {
