@@ -40,9 +40,9 @@ async function cargarConciertos() {
                     tarjeta.className = "concierto";
 
                     tarjeta.innerHTML = `
-                        <h3>${concierto.artista}</h3>
+                        <h3>${concierto.titulo}</h3>
                         <p>🕒 ${concierto.hora}</p>
-                        <p>📍 ${concierto.escenario}</p>
+                        <p>📍 ${obtenerLugar(concierto.lugar)}</p>
                     `;
 
                     proximos.appendChild(tarjeta);
@@ -55,6 +55,12 @@ async function cargarConciertos() {
         console.error(error);
         proximos.innerHTML = `<p>${error.message}</p>`;
     }
+}
+
+// De momento devuelve la clave del lugar.
+// Más adelante leerá locations.json y lo traducirá automáticamente.
+function obtenerLugar(lugar) {
+    return lugar;
 }
 
 document.addEventListener("DOMContentLoaded", cargarConciertos);
